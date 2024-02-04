@@ -14,7 +14,7 @@ const Home = () => {
             Hey, I am Himanshu
           </p>
           <h1 className="mb-5 text-4xl font-bold leading-snug text-headingcolor md:text-6xl  md:leading-[76px]">
-            I am a<span className="text-primary">Web Developer</span>
+            I am a <span className="text-primary">Web Developer</span>
           </h1>
 
           <a href={resumePdf} download>
