@@ -65,7 +65,7 @@ const Footer = () => {
             <FaFacebookF className="cursor-pointer text-xl transition-all duration-300 hover:-translate-y-3 hover:text-primary" />
           </a>
           <a
-            href="https://www.instagram.com"
+            href="https://www.instagram.com/_h_i_t_m_a_n_s_h_u_23/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -89,7 +89,7 @@ const Footer = () => {
       </div>
       <hr />
       <div className="my-4 flex flex-col justify-between gap-8 text-center md:flex-row md:text-left">
-        <p>Copyright by Himanshu 2024</p>
+        <p>@Copyright by Himanshu 2024</p>
         <div className="space-x-6">
           <a href="/" className="hover:text-slate-400">
             Privacy Policy

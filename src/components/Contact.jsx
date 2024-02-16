@@ -1,3 +1,4 @@
+import axios from "axios";
 import { useState } from "react";
 
 const Contact = () => {
@@ -24,29 +25,17 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("https://formspree.io/f/xgegayae", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
+      await axios.post("https://formspree.io/f/xgegayae", formData);
+      setFormData({
+        firstname: "",
+        lastname: "",
+        email: "",
+        phone: "",
+        topic: "",
+        message: "",
+        agree: false,
       });
-      if (response.ok) {
-        // Reset form data after submission
-        setFormData({
-          firstname: "",
-          lastname: "",
-          email: "",
-          phone: "",
-          topic: "",
-          message: "",
-          agree: false,
-        });
-      } else {
-        setError({ message: "Failed to submit the form..!" });
-      }
     } catch (error) {
-      //   console.error("Error submitting form:", error);
       setError({ message: error.message || "Could not send the data..!!" });
     }
   };
@@ -161,10 +150,10 @@ const Contact = () => {
               className="mt-2 block w-full rounded-lg border border-primary px-2 py-2"
             >
               <option value="1">Select one...</option>
-              <option value="2">Web Design</option>
-              <option value="3">UX/UI Design</option>
-              <option value="4">Web Development</option>
-              <option value="5">Graphic Design</option>
+              <option value="Web Design">Web Design</option>
+              <option value="UX/UI">UX/UI Design</option>
+              <option value="Web Development">Web Development</option>
+              <option value="Graphic Design">Graphic Design</option>
             </select>
           </div>
           <div className="mb-8 w-full">
@@ -187,9 +176,16 @@ const Contact = () => {
             </textarea>
           </div>
           <div className="mb-8 w-full">
-            <input type="checkbox" name="agree" id="agree" required />
+            <input
+              type="checkbox"
+              checked={formData.agree}
+              name="agree"
+              id="agree"
+              onChange={handleChange}
+              required
+            />
             <label
-              htmlFor="message"
+              htmlFor="agree"
               className="ml-3 w-full text-base text-headingcolor"
             >
               I accept the terms
