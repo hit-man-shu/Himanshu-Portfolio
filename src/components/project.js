@@ -2,9 +2,18 @@ import KBC from "../assets/KBCProject.png";
 import ProjectManager from "../assets/ProjectManagerProject.png";
 import HimanshuDine from "../assets/Himanshu'sDine.png";
 import HimanshuEvent from "../assets/himanshu'seventshub.png";
-
+import Himanshublog from "../assets/blogapp.png";
 
 export const projects = [
+  {
+    id: 5,
+    name: "Himanshu's Blog",
+    description:
+      "Built Himanshu's Blog App, a single-page application (SPA) leveraging React's component-driven architecture for a dynamic and user-friendly experience. Implemented React Router v6 to create an intuitive navigation system, allowing users to seamlessly explore blog content. Employed Tanstack Query's latest methods for efficient data fetching and caching, optimizing API calls and ensuring a smooth and responsive user interface.  Incorporated a secure user authentication system using JSON Web Tokens (JWT) for login and access control.",
+    image: Himanshublog,
+    url: "https://hitmanshu-bloghub.netlify.app/",
+    github: "https://github.com/hit-man-shu/Himanshu-s-Bloghub",
+  },
   {
     id: 1,
     name: "Himanshu's EventsHub",
@@ -41,5 +50,4 @@ export const projects = [
     url: "https://hitmanshu-projectmanager.netlify.app/",
     github: "https://github.com/hit-man-shu/Project-Manager",
   },
-  
 ];
