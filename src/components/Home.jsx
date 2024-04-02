@@ -1,5 +1,5 @@
 import banner from "../assets/HdCircleBG.png";
-import resumePdf from "../assets/Himanshu's Resume.pdf";
+import resumePdf from "../assets/HimanshuNewResume.pdf";
 
 const Home = () => {
   return (
