@@ -3,8 +3,18 @@ import ProjectManager from "../assets/ProjectManagerProject.png";
 import HimanshuDine from "../assets/Himanshu'sDine.png";
 import HimanshuEvent from "../assets/himanshu'seventshub.png";
 import Himanshublog from "../assets/blogapp.png";
+import Ecommerce from "../assets/Ecommerce.png";
 
 export const projects = [
+  {
+    id: 6,
+    name: "Himanshu's StylesHub",
+    description:
+      "Himanshu's StylesHub, a meticulously crafted e-commerce website built with React for dynamic interfaces, leverages Redux Toolkit for streamlined state management, React Tanstack Query v5 for effortless data fetching, and React Router DOM v6 with loader actions and useRouteError hook for seamless navigation and robust error handling, offering a modern and efficient shopping experience. ",
+    image: Ecommerce,
+    url: "https://hitmanshu-styleshub.netlify.app/",
+    github: "https://github.com/hit-man-shu/Himanshu-s-StylesHub",
+  },
   {
     id: 5,
     name: "Himanshu's Blog",
